@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 
 // const mongoDbClient = require("mongodb").MongoClient
 
-const mongoURI = 'mongodb://canteen:3345@ac-syvaqes-shard-00-00.8f3wqt8.mongodb.net:27017,ac-syvaqes-shard-00-01.8f3wqt8.mongodb.net:27017,ac-syvaqes-shard-00-02.8f3wqt8.mongodb.net:27017/gofoodmern?ssl=true&replicaSet=atlas-enxyz5-shard-0&authSource=admin&retryWrites=true&w=majority'
+const mongoURI = 'mongodb://<database name and password>@ac-syvaqes-shard-00-00.8f3wqt8.mongodb.net:27017,ac-syvaqes-shard-00-01.8f3wqt8.mongodb.net:27017,ac-syvaqes-shard-00-02.8f3wqt8.mongodb.net:27017/gofoodmern?ssl=true&replicaSet=atlas-enxyz5-shard-0&authSource=admin&retryWrites=true&w=majority'
 
 module.exports = function (callback) {
     mongoose.set('strictQuery', false);
